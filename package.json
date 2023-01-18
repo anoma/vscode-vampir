@@ -1,0 +1,27 @@
+{
+  "name": "vamp-ir",
+  "displayName": "vamp-ir",
+  "description": "Syntax highlighting for VampIR",
+  "version": "0.0.1",
+  "icon": "icon.png",
+  "publisher": "lopeetall",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "vampir",
+      "aliases": ["VampIR", "vampIR", "vampir", "Vampir", "vamp-ir", "Vamp-ir", "Vamp-IR", "VAMP-IR"],
+      "extensions": [".vampir",".pir"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "vampir",
+      "scopeName": "source.vampir",
+      "path": "./syntaxes/.tmLanguage.json"
+    }]
+  }
+}
